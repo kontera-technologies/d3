@@ -66,6 +66,6 @@ function d3_geo_pointInPolygon(point, polygon) {
   // Second, count the (signed) number of times a segment crosses a meridian
   // from the point to the South pole.  If it is zero, then the point is the
   // same side as the South pole.
-
-  return (polarAngle < -ε || polarAngle < ε && d3_geo_areaRingSum < -ε) ^ (winding & 1);
+  return 0;
+  // return (polarAngle < -ε || polarAngle < ε && d3_geo_areaRingSum < -ε) ^ (winding & 1);
 }
